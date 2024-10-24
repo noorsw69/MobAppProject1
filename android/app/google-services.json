@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1075917118681",
+    "project_id": "sempro-805d4",
+    "storage_bucket": "sempro-805d4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075917118681:android:e0687a437717cb8b72b2c8",
+        "android_client_info": {
+          "package_name": "com.example.flutter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCS2_73LSBIEmiuhSR3kNseWBBWuSeAva4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

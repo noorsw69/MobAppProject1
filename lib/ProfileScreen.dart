@@ -4,7 +4,7 @@ import 'package:flutter_project1/EnrolledCoursesScreen.dart';
 class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // Use MediaQuery to get the screen dimensions
+   
     double screenWidth = MediaQuery.of(context).size.width;
     double screenHeight = MediaQuery.of(context).size.height;
 
@@ -13,34 +13,34 @@ class ProfileScreen extends StatelessWidget {
         title: const Text('Profile'),
       ),
       body: Padding(
-        padding: EdgeInsets.all(screenWidth * 0.04), // Responsive padding
+        padding: EdgeInsets.all(screenWidth * 0.04), 
         child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              // Profile Picture
+             
               CircleAvatar(
-                radius: screenWidth * 0.15, // Responsive radius
+                radius: screenWidth * 0.15, 
                 backgroundImage: const AssetImage('asset/profile_picture.png'),
-                child: Icon(Icons.person, size: screenWidth * 0.15), // Responsive icon size
+                child: Icon(Icons.person, size: screenWidth * 0.15), 
               ),
-              SizedBox(height: screenHeight * 0.02), // Responsive spacing
+              SizedBox(height: screenHeight * 0.02), 
               Text(
                 'Noor Un Nisa',
                 style: TextStyle(
-                  fontSize: screenWidth * 0.06, // Responsive font size
+                  fontSize: screenWidth * 0.06, 
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              SizedBox(height: screenHeight * 0.01), // Responsive spacing
+              SizedBox(height: screenHeight * 0.01), 
               Text(
                 'noorunnisa43@example.com',
-                style: TextStyle(fontSize: screenWidth * 0.045), // Responsive font size
+                style: TextStyle(fontSize: screenWidth * 0.045), 
               ),
-              SizedBox(height: screenHeight * 0.02), // Responsive spacing
+              SizedBox(height: screenHeight * 0.02), 
 
-              // Buttons
+           
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
@@ -50,26 +50,25 @@ class ProfileScreen extends StatelessWidget {
                 },
                 child: Text('View Enrolled Courses'),
               ),
-              SizedBox(height: screenHeight * 0.01), // Responsive spacing
-
+              SizedBox(height: screenHeight * 0.01), 
               ElevatedButton(
                 onPressed: () {
                   print('Navigate to Edit Profile');
                 },
                 child: Text('Edit Profile'),
               ),
-              SizedBox(height: screenHeight * 0.01), // Responsive spacing
+              SizedBox(height: screenHeight * 0.01), 
 
               ElevatedButton(
                 onPressed: () {
                   print('Logged out');
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.purple, // Use backgroundColor instead of primary
+                  backgroundColor: Colors.purple, 
                 ),
                 child: Text(
                   'Logout',
-                  style: TextStyle(color: Colors.white), // Set text color to white
+                  style: TextStyle(color: Colors.white), 
                 ),
               ),
             ],

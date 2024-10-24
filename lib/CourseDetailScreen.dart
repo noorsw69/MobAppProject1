@@ -45,7 +45,7 @@ class _CourseDetailScreenState extends State<CourseDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    // Get screen width for responsiveness
+    
     double screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
@@ -53,7 +53,7 @@ class _CourseDetailScreenState extends State<CourseDetailScreen> {
         title: Text(widget.courseTitle),
       ),
       body: Padding(
-        padding: EdgeInsets.all(screenWidth > 600 ? 24.0 : 16.0), // Adjust padding based on screen width
+        padding: EdgeInsets.all(screenWidth > 600 ? 24.0 : 16.0), 
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -61,7 +61,7 @@ class _CourseDetailScreenState extends State<CourseDetailScreen> {
               Container(
                 margin: EdgeInsets.only(bottom: 16.0),
                 child: AspectRatio(
-                  aspectRatio: 16 / 9, // Maintain aspect ratio for the video
+                  aspectRatio: 16 / 9, 
                   child: YoutubePlayer(
                     controller: _youtubeController,
                     showVideoProgressIndicator: true,
@@ -78,7 +78,7 @@ class _CourseDetailScreenState extends State<CourseDetailScreen> {
               child: Text(
                 widget.description,
                 style: TextStyle(
-                  fontSize: screenWidth > 600 ? 18 : 16, // Adjust font size based on screen width
+                  fontSize: screenWidth > 600 ? 18 : 16, 
                 ),
               ),
             ),

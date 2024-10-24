@@ -64,26 +64,25 @@ class WelcomeContent extends StatelessWidget {
     return Scaffold(
       backgroundColor: Color(0xFFE6E6FA),
       body: Padding(
-        padding: EdgeInsets.all(screenWidth > 600 ? 32.0 : 16.0), // Adjust padding for larger screens
+        padding: EdgeInsets.all(screenWidth > 600 ? 32.0 : 16.0), 
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // Banner Image or Illustration
+           
             Expanded(
               child: Image.asset(
                 'asset/images/educationImage.jpg',
                 fit: BoxFit.cover,
-                height: screenHeight * 0.3, // Set height as a percentage of screen height
+                height: screenHeight * 0.3, 
               ),
             ),
             SizedBox(height: 20),
 
-            // Welcome Text
-            Text(
+           Text(
               'Welcome to the Learnify App!',
               style: TextStyle(
-                fontSize: screenWidth > 600 ? 36 : 30, // Increase font size for larger screens
+                fontSize: screenWidth > 600 ? 36 : 30, 
                 fontWeight: FontWeight.bold,
                 color: Colors.black,
               ),
@@ -92,25 +91,23 @@ class WelcomeContent extends StatelessWidget {
             SizedBox(height: 10),
             Text(
               'Start your learning journey with us.',
-              style: TextStyle(fontSize: screenWidth > 600 ? 24 : 18, color: Colors.black), // Adjust font size
+              style: TextStyle(fontSize: screenWidth > 600 ? 24 : 18, color: Colors.black), 
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 20),
 
-            // Call to Action Button
+            
             ElevatedButton(
-              onPressed: () {
-                // Navigate to course screen or other action
-              },
+              onPressed: () { },
               style: ElevatedButton.styleFrom(
-                padding: EdgeInsets.symmetric(vertical: screenWidth > 600 ? 20 : 15), // Adjust button height
-                backgroundColor: Colors.white, // Background color
+                padding: EdgeInsets.symmetric(vertical: screenWidth > 600 ? 20 : 15), 
+                backgroundColor: Colors.white, 
               ),
               child: Text(
                 'Unlock Learning',
                 style: TextStyle(
-                  fontSize: screenWidth > 600 ? 24 : 20, // Adjust font size for the button
-                  color: Colors.blueAccent, // Text color
+                  fontSize: screenWidth > 600 ? 24 : 20, 
+                  color: Colors.blueAccent, 
                 ),
               ),
             ),

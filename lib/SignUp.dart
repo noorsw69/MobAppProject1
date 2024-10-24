@@ -44,7 +44,7 @@ class _SignUpScreenState extends State<SignUp> {
 
   @override
   Widget build(BuildContext context) {
-    // Get the screen width
+   
     double screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
@@ -55,7 +55,7 @@ class _SignUpScreenState extends State<SignUp> {
             child: Text(
               'Sign Up',
               style: TextStyle(
-                fontSize: (screenWidth > 600) ? 24 : 20, // Responsive font size
+                fontSize: (screenWidth > 600) ? 24 : 20, 
                 fontWeight: FontWeight.bold,
                 color: Colors.white,
               ),
@@ -73,7 +73,7 @@ class _SignUpScreenState extends State<SignUp> {
             borderRadius: BorderRadius.circular(12),
           ),
           child: Padding(
-            padding: const EdgeInsets.all(20.0), // Adjust padding for smaller screens
+            padding: const EdgeInsets.all(20.0), 
             child: Form(
               key: _formKey,
               child: Column(
@@ -121,7 +121,7 @@ class _SignUpScreenState extends State<SignUp> {
                     child: Text(
                       'Sign Up',
                       style: TextStyle(
-                        fontSize: (screenWidth > 600) ? 20 : 16, // Responsive font size
+                        fontSize: (screenWidth > 600) ? 20 : 16, 
                       ),
                     ),
                   ),
@@ -131,7 +131,7 @@ class _SignUpScreenState extends State<SignUp> {
                     child: Text(
                       'Sign In',
                       style: TextStyle(
-                        fontSize: (screenWidth > 600) ? 18 : 14, // Responsive font size
+                        fontSize: (screenWidth > 600) ? 18 : 14, 
                       ),
                     ),
                   ),

@@ -39,18 +39,18 @@ class EnrolledCoursesScreen extends StatelessWidget {
                   itemCount: enrolledCourses.length,
                   itemBuilder: (context, index) {
                     return Container(
-                      padding: EdgeInsets.all(screenWidth > 600 ? 16.0 : 12.0), // Adjust padding for larger screens
+                      padding: EdgeInsets.all(screenWidth > 600 ? 16.0 : 12.0), 
                       child: Card(
                         elevation: 2,
                         child: ListTile(
                           title: Text(
                             enrolledCourses[index],
                             style: TextStyle(
-                              fontSize: screenWidth > 600 ? 20 : 16, // Adjust font size for larger screens
+                              fontSize: screenWidth > 600 ? 20 : 16, 
                             ),
                           ),
                           onTap: () {
-                            // You can add functionality here, e.g., navigating to course details
+                            
                           },
                         ),
                       ),

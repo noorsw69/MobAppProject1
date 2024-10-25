@@ -45,15 +45,14 @@ class _CourseDetailScreenState extends State<CourseDetailScreen> {
 
   @override
   Widget build(BuildContext context) {
-    
     double screenWidth = MediaQuery.of(context).size.width;
 
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.courseTitle),
       ),
-      body: Padding(
-        padding: EdgeInsets.all(screenWidth > 600 ? 24.0 : 16.0), 
+      body: SingleChildScrollView( 
+        padding: EdgeInsets.all(screenWidth > 600 ? 24.0 : 16.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -61,7 +60,7 @@ class _CourseDetailScreenState extends State<CourseDetailScreen> {
               Container(
                 margin: EdgeInsets.only(bottom: 16.0),
                 child: AspectRatio(
-                  aspectRatio: 16 / 9, 
+                  aspectRatio: 16 / 9,
                   child: YoutubePlayer(
                     controller: _youtubeController,
                     showVideoProgressIndicator: true,
@@ -71,14 +70,17 @@ class _CourseDetailScreenState extends State<CourseDetailScreen> {
             else
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
-                child: Text('Video not available', style: TextStyle(fontSize: screenWidth > 600 ? 20 : 16)),
+                child: Text(
+                  'Video not available',
+                  style: TextStyle(fontSize: screenWidth > 600 ? 20 : 16),
+                ),
               ),
             Padding(
               padding: const EdgeInsets.only(top: 16.0),
               child: Text(
                 widget.description,
                 style: TextStyle(
-                  fontSize: screenWidth > 600 ? 18 : 16, 
+                  fontSize: screenWidth > 600 ? 18 : 16,
                 ),
               ),
             ),
